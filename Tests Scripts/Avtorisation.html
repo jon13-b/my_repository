@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://prom.ua/" />
+<title>Avtorisation</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Avtorisation</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>function randomtext(len) {out='';for(i=1;i&lt;len;i++){if (i%2) {out+=String.fromCharCode(97 + Math.round(Math.random() * 25))} else {out+=String.fromCharCode(65 + Math.round(Math.random() * 25))}} return out;} randomtext(32);</td>
+	<td>pass</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function randomtext(len) {out='';for(i=1;i&lt;len;i++){if (i%2) {out+=String.fromCharCode(97 + Math.round(Math.random() * 25))} else {out+=String.fromCharCode(65 + Math.round(Math.random() * 25))}} return out;} randomtext(32);</td>
+	<td>lastname</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function randomtext(len) {out='';for(i=1;i&lt;len;i++){if (i%2) {out+=String.fromCharCode(97 + Math.round(Math.random() * 25))} else {out+=String.fromCharCode(65 + Math.round(Math.random() * 25))}} return out;} randomtext(32);</td>
+	<td>firstname</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>function randomtext(len) {out='';for(i=1;i&lt;len;i++){if (i%2) {out+=String.fromCharCode(97 + Math.round(Math.random() * 25))} else {out+=String.fromCharCode(65 + Math.round(Math.random() * 25))}} return out;} randomtext(32);</td>
+	<td>randoms</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;Test&quot;+storedVars['randoms']+&quot;@gmail.com&quot;</td>
+	<td>emailAddress</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/join-now?path_id=txt.register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=company_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>${firstname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>${lastname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${emailAddress}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${pass}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=register_button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id='company_name_error'</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id='company_name_error'</td>
+	<td>Это обязательное поле.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
